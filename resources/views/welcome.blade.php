@@ -1,100 +1,96 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<html>
+<head>
+    <meta charset="utf-8">
+    <script src="https://use.fontawesome.com/d1341f9b7a.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+    <link rel="stylesheet" href="{{asset('css/bootstrap.css')}}">
+    <title>Personal WebSite</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background: url({{asset('image/bg.jpeg')}}) no-repeat;
+            background-size: cover;
+        }
+        .box{
+            width: 450px;
+            background: rgba(0, 0, 0, 0.4);
+            padding: 40px;
+            text-align: center;
+            margin: auto;
+            margin-top: 5%;
+            color: white;
+            font-family: 'Century Gothic',sans-serif;
+        }
+        .box-img{
+            border-radius: 89px 99px 89px 123px;
+            width: 200px;
+            height: 200px;
+        }
+        .box h1{
+            font-size: 40px;
+            letter-spacing: 4px;
+            font-weight: 100;
+            background-color:  #black;
+            color:blue;
 
-        <title>Laravel</title>
+        }
+        .box h5{
+            font-size: 20px;
+            letter-spacing: 3px;
+            font-weight: 100;
+            color:skyblue;
+        }
+        .box p{
+            text-align: justify;
+            color: papayawhip;
+        }
+        ul{
+            margin: 0;
+            padding: 0;
+        }
+        .box li{
+            display: inline-block;
+            margin: 6px;
+            list-style: none;
+        }
+        .box li a{
+            color: white;
+            text-decoration: none;
+            font-size: 60px;
+            transition: all ease-in-out 250ms;
+        }
+        .box li a:hover{
+            color: #fd7e14;
+        }
+        .dream{
+            font-size: 16px;
+            font-family: lato;
+        }
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Nunito', sans-serif;
-                font-weight: 200;
-                height: 100vh;
-                margin: 0;
-            }
-
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 13px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
-
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
-                        @endif
-                    @endauth
-                </div>
-            @endif
-
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://vapor.laravel.com">Vapor</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
-            </div>
-        </div>
-    </body>
+    </style>
+</head>
+<body>
+<div class="container">
+<div class="box">
+    <img src="{{asset('image/sanjay.jpeg')}}" alt="" class="box-img">
+    <h1>
+        <b>Sanjay Adhikari</b></h1>
+    <h5>
+        <i>jr laravel developer</i></h5>
+    <p class="dream">
+        I am sanjay Adhikari from machapokhari kathmandu.my dream job would allow me to develop web content for a variety companies. i love getting to know different clients and developing content to suit their unique neeeds</p>
+    <ul>
+        <li><a href="https://www.facebook.com/sanjay.adhkari.52"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+        <li><a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+        <li><a href="#"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a></li>
+    </ul>
+</div>
+</div>
+</body>
 </html>
+
+
+
