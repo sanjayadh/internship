@@ -83,12 +83,15 @@
     <p class="dream">
         I am sanjay Adhikari from machapokhari kathmandu.my dream job would allow me to develop web content for a variety companies. i love getting to know different clients and developing content to suit their unique neeeds</p>
     <ul>
-        <li><a href="https://www.facebook.com/sanjay.adhkari.52"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+        <li><a href="https://www.facebook.com/sangita.dhungana.129"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
         <li><a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
         <li><a href="#"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a></li>
     </ul>
 </div>
 </div>
+<marquee width="60%" direction="right" height="100px">
+    This is a sample scrolling text that has scrolls texts to right.
+</marquee>
 </body>
 </html>
 

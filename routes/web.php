@@ -13,9 +13,21 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-/*Route::get('/', function () {
+Route::get('/sanjay', function () {
     return view('welcome');
-});*/
+});
 Route::get('/',function(){
     return view('social');
 });
+Route::get('/ss',function(){
+    return view('fluff');
+});
+Route::get('/sangita',function (){
+    return view('sangita');
+});
+/*
+Route::resource("social",'ProjectController@index');
+Route::get('login',function (){
+    return view('login');
+});*/
+Route::get("login","LockdownController@getLogin")->name('login');
